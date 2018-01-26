@@ -1,16 +1,70 @@
-.example-container {
-  width: 500px;
-  height: 300px;
-  border: 1px solid rgba(0, 0, 0, 0.5);
+.parent {
+	width: 100%;
+	height: 100%;
 }
 
-.example-sidenav-content {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+.mainContainer {
+	display: block;
+	height: 100%;
 }
 
-.example-sidenav {
-  padding: 20px;
+.connections {
+	padding: 20px;
+	height: 100%;
+	width: 225px;
+}
+
+.connectionsTitle {
+	font-size: 22px;
+}
+
+.addConnectionBtn {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+.topBar {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.title {
+	margin-left: 10px;
+	font-size: 22px;
+	line-height: 36px;
+}
+
+.menuBtn {
+	width: 50px;
+	min-width: 50px;
+	padding: 0px;
+}
+
+.connectionInfoContainer {
+	width: 100%;
+	margin-top: 50px;
+}
+
+.connectionContainer {
+	background: rgba(0,0,0,0.1);
+	width: 80%;
+	margin: 5%;
+	padding: 5%;
+	position: relative;
+}
+
+.connectBtn {
+	position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+
+.hostInput {
+	width: 70%;
+}
+
+.portInput {
+	width: 20%;
+	float: right;
 }

@@ -1,16 +1,41 @@
-<mat-drawer-container class="example-container" autosize>
-  <mat-drawer #drawer class="example-sidenav" mode="side">
-    <p>Auto-resizing sidenav</p>
-    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-    <button (click)="showFiller = !showFiller" mat-raised-button>
-      Toggle extra text
+<mat-drawer-container class="parent">
+  <mat-drawer #drawer class="connections" mode="side">
+    <span class="connectionsTitle">Connections</span>
+    <button class="addConnectionBtn" mat-raised-button>
+      <mat-icon>add</mat-icon> Add New
     </button>
   </mat-drawer>
 
-  <div class="example-sidenav-content">
-    <button type="button" mat-button (click)="drawer.toggle()">
-      Toggle sidenav
-    </button>
+  <div class="mainContainer">
+    <div class="topBar">
+      <button class="menuBtn" type="button" mat-button (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span class="title">EzQuery</span>
+    </div>
+    <div class="connectionInfoContainer">
+      <div class="connectionContainer">
+        <span class="connectionsTitle">Add Connection</span><br>
+        <mat-form-field class="hostInput">
+          <input matInput placeholder="Host">
+        </mat-form-field>
+        <mat-form-field class="portInput">
+          <input matInput placeholder="Port">
+        </mat-form-field>
+        <mat-form-field class="hostInput">
+          <input matInput placeholder="User">
+        </mat-form-field>
+        <mat-form-field class="hostInput">
+          <input matInput placeholder="Password">
+        </mat-form-field>
+        <mat-form-field class="hostInput">
+          <input matInput placeholder="Database">
+        </mat-form-field>
+        <button class="connectBtn" type="button" mat-button>
+          Connect
+        </button>
+      </div>
+    </div>
   </div>
 
 </mat-drawer-container>
